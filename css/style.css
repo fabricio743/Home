@@ -24,6 +24,7 @@ header > #logo > p{
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 15px;
+    text-shadow:  10px 5px 5px rgba(0, 0, 0, 0.247);
 }
 
 header > nav > ul{
@@ -39,6 +40,7 @@ header > nav > ul > li > a{
     margin: 10px;
     color: white;
     text-decoration: none;
+    text-shadow:  10px 10px 10px rgba(0, 0, 0, 0.164);
 }
 header > nav > ul > li > a:hover{
     color: rgb(116, 0, 0);
@@ -80,12 +82,14 @@ main > #news{
 main > #news > h1{
     margin: 15px;
     color: rgb(129, 54, 0);
+    text-shadow:  5px 5px 10px rgba(0, 0, 0, 0.164);
 }
 main > #news > p{
     max-width: 90%;
     text-align: left;
     margin: auto;
     text-indent: 30px;
+    text-shadow:  2px 2px 5px rgba(0, 0, 0, 0.171);
 }
 main > #news > hr {
     width: 100%;
@@ -107,6 +111,9 @@ main > #foto > img{
     height: 80%;
     border-radius: 30px;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.144);
+}
+main > #foto > h1{
+    text-shadow:  5px 5px 5px rgba(255, 255, 255, 0.466);
 }
 /*RESPONSIVIDADE PARA TELAS MENORES*/
     @media (max-width:1800px) {
