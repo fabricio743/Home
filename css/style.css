@@ -3,6 +3,7 @@ body{
     padding: 0%;
     margin: 0%;
 }
+/*CABEÇALHO DO SITE*/
 header{
     display: flex;
     justify-content: space-evenly;
@@ -12,35 +13,37 @@ header{
     background-color: burlywood;
     background: linear-gradient(burlywood,wheat);
 }
-#logo{
+
+header > #logo{
     display: flex;
     align-items: center;
     justify-content: center;
 }
-#logo > p{
+header > #logo > p{
     color: white;
     font-size: 3rem;
     font-weight: 900;
     letter-spacing: 15px;
 }
 
-ul{
+header > nav > ul{
     display: flex;    
 }
-nav > ul > li{
+header > nav > ul > li{
     margin: 10px;
     list-style: none;
 }
-nav > ul > li > a{
+header > nav > ul > li > a{
     font-size: 33px;
     font-weight: 600;
     margin: 10px;
     color: white;
     text-decoration: none;
 }
-nav > ul > li > a:hover{
+header > nav > ul > li > a:hover{
     color: rgb(116, 0, 0);
 }
+
 #bottom{
     display: none;
     width: 50px;
@@ -49,10 +52,38 @@ nav > ul > li > a:hover{
     margin: 10px;
     border-radius: 50%;
 }
+/*MENU PARA CELULAR*/
 #navgation{
     display: none;
+    flex-flow: column;
+    background-color: wheat;
+    margin: 0%;
 }
-/*parte central do conteudo*/
+
+#navgation > nav > ul{
+    display: flex;    
+    flex-flow: column;
+    align-items: center;
+}
+#navgation > nav > ul > li{
+    width: 90%;
+    height: 100%;
+    list-style: none;
+    text-align: center;
+    background-color: rgba(73, 4, 4, 0.918);
+    margin: 2px;
+    border:  3px solid rgba(136, 95, 18, 0.452);
+}
+#navgation >nav > ul > li > a{
+    font-size: 28px;
+    font-weight: 600;
+    color: white;
+    text-decoration: none;
+}
+#navgation >nav > ul > li > a:hover{
+    color: rgb(0, 0, 0);
+}
+/*parte principal do site*/
 main{
     min-height: 85vh;
     background-color: wheat;
@@ -61,54 +92,8 @@ main{
     align-items: center;
     justify-content: center;
 }
-@media (max-width:1800px) {
-    main{
-        flex-flow: column;
-    }
-    main > #news{
-        width: 80%;
-    }
-    main >#foto{
-        width: 80%;
-    }
-}
-@media (max-width:1000px) {
-    main{
-        padding-bottom: 80px;
-    }
-    header > nav {    
-        display: none;
-    }
-    #navgation{
-        display: none;
-        flex-flow: column;
-        background-color: wheat;
-    }
-    ul{
-        display: flex;    
-        flex-flow: column;
-    }
-    nav > ul > li{
-        list-style: none;
-        text-align: center;
-        background-color: rgba(73, 4, 4, 0.63);
-    }
-    nav > ul > li > a{
-        font-size: 33px;
-        font-weight: 600;
-        margin: 10px;
-        color: white;
-        text-decoration: none;
-    }
-    nav > ul > li > a:hover{
-        color: rgb(0, 0, 0);
-    }
-    #bottom{
-        display: inline;
-    }
-}
-
-#news{
+/*Conteudo escrito*/
+main > #news{
     width: 30%;
     height: 80%;
     margin: 15px;
@@ -129,7 +114,8 @@ main > #news > p{
 main > #news > hr {
     width: 100%;
 }
-#foto {
+/*Conteudo foto*/
+main > #foto {
     display: flex;
     flex-flow: column;
     width: 40%;
@@ -139,9 +125,34 @@ main > #news > hr {
     justify-content: center;
     align-items: center;
 }
-#foto > img{
+main > #foto > img{
     width: 90%;
     height: 80%;
     border-radius: 30px;
     box-shadow: 6px 6px 10px rgba(0, 0, 0, 0.144);
+}
+/*RESPONSIVIDADE PARA TELAS MENORES*/
+    @media (max-width:1800px) {
+    main{
+        flex-flow: column;
+    }
+    main > #news{
+        width: 80%;
+    }
+    main >#foto{
+        width: 80%;
+    }
+}
+/*RESPONSIVIDADE PARA CELULARES E TABLETS*/
+    @media (max-width:1000px) {
+    main{
+        padding-bottom: 80px;
+    }
+    header > nav {    
+        display: none;
+    }
+
+    #bottom{
+        display: inline;
+    }
 }

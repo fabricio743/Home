@@ -7,7 +7,7 @@
     <title>Site</title>
 </head>
 <body>
-
+<!--iNICIO DO SITE-->
     <header>
         <div id="logo"><p>Afro</p></div>
         <nav>
@@ -18,18 +18,21 @@
                 <li><a href="#">Madrugada</a></li>
             </ul>
         </nav>
+<!--BOTÃO PARA MENU DE CELULAR-->
         <div id="bottom" onclick="point()"></div>
     </header>
+<!--PARTE DA BARRA DE NAVEGAÇÃO PARA CELULAR-->
     <div id="navgation">
         <nav>
             <ul>
-                <li><a href="#">Dia</a></li>
-                <li><a href="#">Noite</a></li>
-                <li><a href="#">Manhã</a></li>
-                <li><a href="#">Madrugada</a></li>
+                <li onmouseenter="select()" class="lidnav"><a href="#">Dia</a></li>
+                <li onmouseenter="select()" class="lidnav"><a href="#">Noite</a></li>
+                <li onmouseenter="select()" class="lidnav"><a href="#">Manhã</a></li>
+                <li onmouseenter="select()" class="lidnav"><a href="#">Madrugada</a></li>
             </ul>
         </nav>
     </div>
+<!--PARTE PRINCIPAL DO SITE-->
     <main>
         <section id="news">
             <h1>Um, dois</h1>
@@ -45,12 +48,12 @@
             <hr>
             <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laudantium at, amet doloribus nihil eaque itaque repellat! Maxime veritatis odit non odio dolorum possimus aspernatur! Quia consectetur facilis nulla explicabo rerum.</p>
         </section>
+
         <section id="foto">
             <h1>Lorem abobora livro</h1>
             <img src="pexels-monstera-production-5634667.jpg" alt="Foto">
         </section>
     </main>
-<script src="java.js">
-</script>
+<script src="java.js"></script>
 </body>
 </html>
