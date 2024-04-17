@@ -3,7 +3,7 @@ function point(){
     var nav = document.getElementById('navgation')
 
     if(c.style.background === 'brown'){
-        c.style.background='blue'
+        c.style.background='chocolate'
         nav.style.display='flex'
     } else{
         c.style.background='brown'
