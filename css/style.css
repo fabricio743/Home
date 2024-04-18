@@ -10,7 +10,6 @@ header{
     align-items: center;
     width: 100%;
     height: 15vh;
-    background-color: burlywood;
     background: linear-gradient(burlywood,wheat);
 }
 
@@ -53,6 +52,12 @@ header > nav > ul > li > a:hover{
     background-color: brown;
     margin: 10px;
     border-radius: 50%;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.178);
+}
+#bottom > img{
+    margin: auto;
 }
 /*MENU PARA CELULAR*/
 #navgation{
@@ -159,6 +164,6 @@ main > #foto > h1{
         color: rgb(0, 0, 0);
     }
     #bottom{
-        display: inline;
+        display: flex;
     }
 }
