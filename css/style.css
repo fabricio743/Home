@@ -10,7 +10,7 @@ header{
     align-items: center;
     width: 100%;
     height: 15vh;
-    background: linear-gradient(burlywood,wheat);
+    background: linear-gradient(rgb(136, 88, 25),rgb(235, 189, 64));
 }
 
 header > #logo{
@@ -63,13 +63,13 @@ header > nav > ul > li > a:hover{
 #navgation{
     display: none;
     flex-flow: column;
-    background-color: wheat;
+    background-color: rgb(235, 189, 64);
     margin: 0%;
 }
 /*parte principal do site*/
 main{
     min-height: 85vh;
-    background-color: wheat;
+    background-color: rgb(235, 189, 64);
     display: flex;
     flex-wrap: wrap;
     align-items: center;
